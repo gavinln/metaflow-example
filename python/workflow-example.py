@@ -5,7 +5,7 @@ https://docs.prefect.io/
 
 import inspect
 
-from IPython import embed
+# from IPython import embed
 
 
 class Task:
@@ -68,7 +68,6 @@ class SubTask(Task):
 # initialize the task instance
 hello = HelloTask()
 sub = SubTask()
-
 
 flow = Flow("My imperative flow!")
 flow.add_task(hello)
