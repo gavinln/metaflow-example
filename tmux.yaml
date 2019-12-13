@@ -1,0 +1,17 @@
+session_name: metaflow-example
+start_directory: "."
+windows:
+- window_name: edit-run
+  layout: even-vertical
+  focus: true
+  shell_command_before:
+    - echo initial command
+  panes:
+    - shell_command: pipenv run ./scripts/start-notebook.sh
+      focus: true
+    - echo 'other window'
+- window_name: git
+  layout: even-vertical
+  panes:
+    - shell_command: git repl
+    - vifm .

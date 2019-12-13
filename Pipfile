@@ -6,9 +6,12 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-metaflow = "*"
 ipython = "*"
 pre-commit = "*"
+jupyterlab = "*"
+matplotlib = "*"
+pandas = "*"
+metaflow = "*"
 
 [requires]
 python_version = "3.7"
